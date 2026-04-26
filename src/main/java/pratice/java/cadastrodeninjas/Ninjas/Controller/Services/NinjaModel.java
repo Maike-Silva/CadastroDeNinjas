@@ -1,6 +1,5 @@
-package pratice.java.cadastrodeninjas;
+package pratice.java.cadastrodeninjas.Ninjas.Controller.Services;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import jakarta.persistence.*;
 
 @Entity
@@ -9,10 +8,19 @@ public class NinjaModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
+
     private String nome;
+
     private String email;
+
     int idade;
+
+    //@ManyToOne Um ninja pode ter uma missão
+    @ManyToOne
+    @JoinColumn (name = "missoes_id") //Foreing key ou chave estrangeira
+    private MissoesModel missoes;
 
     public NinjaModel() {
     }

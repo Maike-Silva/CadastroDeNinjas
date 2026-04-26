@@ -1,4 +1,4 @@
-package pratice.java.cadastrodeninjas;
+package pratice.java.cadastrodeninjas.Ninjas.Controller.Services;
 
 import org.springframework.web.bind.annotation.*;
 
