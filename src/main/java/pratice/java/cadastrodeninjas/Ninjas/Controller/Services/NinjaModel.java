@@ -20,7 +20,7 @@ public class NinjaModel {
 
     private String nome;
 
-    @Column(unique = true0)
+    @Column(unique = true)
     private String email;
 
     int idade;
@@ -31,4 +31,3 @@ public class NinjaModel {
     private MissoesModel missoes;
 
 
-as1z
